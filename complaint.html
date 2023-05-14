@@ -6,19 +6,21 @@
         <title>Complaint page</title>
         <link rel="stylesheet" href="Comp1.css">
     </head>
-    <body bgcolor="#ccc">
+    <body>
+        <div class="complaint-title">
         <h1>Kerala Water Authority</h1>
-        <h2>Complaint register page</h2>
+        <h2>complaint registration page</h2>
+        </div>
         <div class="Complaint">
-            <form >
-                <label for="fname">First Name</label>
+            <form class="comp-form1">
+                <label for="fname" class="label">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                <label for="lname">Last Name</label>
+                <label for="lname" class="label">Last Name</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="add">Address</label>
+                <label for="add" class="label">Address</label>
                 <textarea name="add" placeholder="Enter your address here..."></textarea>
-                <label for="comp">Complaint</label>
-                <select required>
+                <label for="comp" class="label">Complaint</label>
+                <select required >
                     <option>Other</option>
                     <option>Water scarcity</option>
                     <option>Issue with the bill</option>
@@ -26,12 +28,12 @@
                     <option>Property issue</option>
                     <option>Pipe damage</option>
                 </select>
-                <label for="cid">Consumer id</label>
+                <label for="cid" class="label">Consumer id</label>
                 <input type="text" id="cid" name="consumerid" placeholder="xxxxxxxxxxxxx">
-                <label for="cnum">Consumer number</label>
+                <label for="cnum" class="label">Consumer number</label>
                 <input type="number" id="cnum" name="consumerid" placeholder="xxxxxxxxxxxxx" >
-                <label for="rnum">Registered mobile number</label>
-                <input type="tel" id="rnum" name="consumerid" placeholder="+91 xxxxx-xxxxx" pattern="[0-9]{10}" required>
+                <label for="rnum" class="label">Registered mobile number</label>
+                <input type="tel"  id="rnum" name="consumerid" placeholder="+91 xxxxx-xxxxx" pattern="[0-9]{10}" required>
                 <br>
                 <input type="submit" value="Submit" formaction="./complaint2.html">
                 <br>
