@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Leakage page</title>
+        <link rel="stylesheet" href="Leakage.css">
+    </head>
+    <body>
+        <script src="benefits.js"></script>
+         <h1 class="header">Utility</h1>
+         <div class="box">
+         <section class="split top">
+               <h2 class="sub-head"> Leakage Benefits</h2>
+               <form class="Leakform">
+                <label class="label">Previous reading</label>
+                <input type="number" required>
+                <label class="label">Current reading</label>
+                <input type="number" required>
+                <label class="label">No.of Months</label>
+                <input type="number" min="1" required>
+                <input type="reset" onclick="hide()"  >
+                <input type="submit" value="calculate" onclick="show()">  
+               </form>
+         </section>
+
+         <section class=" split bottom" id="calculate" >
+            <h2 class="sub-head">Details</h2>
+             <table >
+                <tr>
+                    <td>Leakage:</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <td>No.of Months:</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Leakage Benefit:</td>
+                    <td>1200</td>
+                </tr>
+             </table>
+        </section>
+
+         </div>
+         <section class="rest">
+
+         </section>
+
+    </body>
+</html>
